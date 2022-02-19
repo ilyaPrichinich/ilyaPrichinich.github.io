@@ -1,0 +1,40 @@
+.slider {
+    padding: 81px 0;
+}
+.carousel {
+    padding: 0;
+    &-item {
+        width: 750px;
+        height: 580px;
+        img {
+            width: 100%;
+        }
+        &-mod {
+            top: 68px;
+        }
+    }
+    &-inner {
+        display: flex;
+        align-items: center;
+        left: 85px;
+    }
+    &-control-prev {
+        left: -66px;
+        opacity: 1;
+        &-icon {
+            width: 30px;
+            height: 50px;
+            background: url(../icons/chevron-left-solid.svg) center center/cover no-repeat;
+        }
+    }
+    &-control-next {
+        right: -66px;
+        opacity: 1;
+        &-icon {
+            width: 30px;
+            height: 50px;
+            background: url(../icons/chevron-right-solid.svg) center center/cover no-repeat;
+        }
+    }
+}
+
