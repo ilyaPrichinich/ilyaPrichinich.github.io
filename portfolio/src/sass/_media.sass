@@ -1,0 +1,459 @@
+@media (max-width: 1389px)
+    .section
+        &__portfolio
+            &-items
+                justify-content: space-evenly
+        &__price
+            &-items
+                justify-content: space-around
+        &__video-btn
+            top: calc(50% - 125px)
+
+@media (max-width: 1200px)
+    .section
+        &__skills
+            &-items
+                max-width: 830px
+                margin: 0 auto
+                margin-top: 45px
+                justify-content: space-around
+            &-item
+                padding-top: 100px
+                margin-top: 50px
+        &__video
+            padding-bottom: 0
+            &-btn
+                top: calc(50% - 70px)
+        &__price
+            &-item
+                margin-top: 25px 
+
+@media (max-width: 1000px)
+      .section
+        &__video-btn
+            top: calc(50% - 115px)
+
+@media (max-width: 920px)
+      .section
+        &__portfolio
+            &-btns
+                max-width: 650px
+                justify-content: space-around
+        &__video
+                min-height: 720px
+                &-player
+                    height: 595px   
+                &-btn
+                    top: calc(50% - 87px)
+
+@media (max-width: 768px)
+    .light-theme
+        .menu-light
+            background-color: #fff
+        .link-light    
+            color: $dark-color
+    .light_btn
+        margin-left: 11px
+        margin-right: 31px
+    .promo
+        &__bg
+            min-height: 620px
+            background-position: -5px -29px;
+
+    .header
+        height: 90px
+        padding-right: 63px
+        &__language
+            width: 94px
+            margin-right: 16px
+            margin-left: auto
+        &__link
+            margin-left: 40px
+            padding-top: 5px
+  
+    .hamburger
+        display: block
+        width: 50px
+        height: 29px
+        z-index: 1
+        span
+            display: block
+            width: 100%
+            height: 3px
+            margin-bottom: 10px
+            background: #FFFFFF
+            transition: 0.6s all
+        &_active
+            height: 9px
+            span
+                width: 30px
+                margin-bottom: -3px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+            &_light
+                span
+                    background: $dark-color
+              
+    .section
+        &__hero
+            padding: 87px 20px 0 59px
+            &-name
+                font-weight: 400
+                font-size: 38px
+                margin-left: -3px
+                word-spacing: -3px
+            &-descr
+                width: 407px
+                font-weight: 400
+                font-size: 22px
+                line-height: 24px
+                margin-top: 32px
+                word-spacing: -3px
+        &__btn
+            margin-top: 59px
+            &-contacts
+                margin: 0 auto
+                margin-top: 31px
+        &__title
+            font-size: 38px        
+        &__skills
+            padding-bottom: 177px
+            &-items
+                margin-top: 14px
+                padding-right: 5px
+            &-item
+                padding-top: 91px
+                width: 270px
+                &:nth-child(3)
+                    margin-top: 74px
+                &:nth-child(4)
+                    margin-top: 74px
+            &-descr
+                line-height: 21px
+                word-spacing: 3px
+        &__portfolio
+            margin-bottom: -20px
+            &-btns
+                max-width: 450px
+                margin-top: 68px
+        &__btn
+            &-prtf
+                margin-top: 4px
+            &-price
+                margin-top: 39px                    
+        &__video
+            min-height: 628px
+            &-player
+                background: url('../../src/img/video-player.jpg') center center / cover no-repeat
+                height: 418px
+                margin-top: 69px
+                background-position-x: -7px
+                img
+                    display: none
+            &-btn
+                top: calc(50% - 58px)
+                svg
+                    width: 65px
+        &__price
+            padding-bottom: 55px
+            &-items
+                margin-top: 46px
+            &-item
+                width: 414px
+                margin-bottom: 25px
+                padding-top: 50px
+            &-header
+                font-size: 33px
+            &-sum
+                font-size: 28px
+                margin-top: 40px
+            &-descr
+                margin-top: 26px
+                word-spacing: 4px
+        &__contacts
+            min-height: 600px
+            &-title
+                margin: 0 auto
+                font-size: 38px
+                padding-top: 70px
+                text-align: center
+                margin-bottom: 31px
+            &-form
+                margin: 0 auto
+    .footer
+        height: 157px
+        &__wrapper
+            align-items: center
+            flex-direction: column
+            padding-top: 24px
+        &__rs
+            padding: 17px 0 0 0
+        &__social
+            padding: 29px 0 0 0
+
+    .menu
+        position: fixed
+        top: 0
+        right: -100%           
+        width: 620px
+        height: 100vh
+        background-color: rgba(0, 0, 0 , 0.9)
+        transition: 0.6s all
+        z-index: 1
+        &_active
+            right: 0 
+        &__list
+            height: 53vh
+            padding: 112px 0 0 124px
+            display: flex
+            flex-direction: column
+        &__link
+            font-size: 38px
+                    
+@media (max-width: 621px)
+    .promo
+        &__bg
+            background-position-x: -150px
+    .section
+        &__contacts
+            background-position-x: -150px            
+    .menu         
+        width: 100%
+
+@media (max-width: 550px)
+    .light_btn
+        background-size: 35px
+    .header
+        &__link
+            svg
+                width: 45px
+    .hamburger
+        width: 40px
+        height: 23px
+        span
+            margin-bottom: 8px
+        &_active
+            span
+                width: 25px
+                margin-bottom: -3px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .menu
+        &__link
+            font-size: 28px                            
+    .section
+        &__title
+            font-size: 36px
+            max-width: 170px
+            &-skills
+                margin-top: 50px
+            &-portfolio
+                min-width: 235px    
+        &__hero
+            &-name
+                font-size: 34px
+            &-descr
+                width: 340px
+                font-size: 18px
+        &__btn
+            margin-top: 50px
+            width: 210px
+            &-prtf
+                margin-top: 15px
+        &__skills
+            padding-bottom: 125px
+            &-item
+                padding-top: 70px
+            &-items
+                padding-right: 0    
+            &-title
+                font-size: 18px
+            &-descr
+                font-size: 16px
+        &__portfolio
+            &-btns
+                margin-top: 20px
+            &-img
+                width: 390px
+                height: 510px
+                margin-top: 5px
+        &__video
+            min-height: 525px
+            &-player
+                margin-top: 60px
+                height: 340px
+            &-btn
+                top: calc(50% - 64px);
+        &__price
+            &-item
+                width: 370px
+                margin-bottom: 15px
+                padding-top: 25px
+            &-header
+                font-size: 30px                                    
+        &__contacts
+            background-position-x: -150px
+            &-title
+                padding-top: 50px
+                margin-bottom: 24px
+
+@media (max-width: 460px)
+    .promo
+        &__bg
+            background-position-x: -250px
+
+@media (max-width: 410px)
+    .header
+        height: 80px
+        padding-right: 20px
+        &__language
+            width: 88px 
+        &__link
+            margin-left: 10px
+            svg
+                width: 40px
+    .menu
+        &__link
+            font-size: 26px            
+    .hamburger
+        width: 35px
+        height: 21px
+        span
+            margin-bottom: 6px
+        &_active
+            span
+                width: 25px
+                margin-bottom: -3px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)               
+    .promo
+        &__bg
+            min-height: 480px
+            background-position-x: -250px
+            background-size: 790px 
+    .section
+        &__hero
+            padding: 62px 20px 0 30px
+            &-descr
+                width: 310px
+                font-size: 16px
+        &__btn
+            width: 180px
+            height: 45px
+            font-size: 18px
+            &-contacts
+                margin-top: 25px
+        &__skills
+            padding-bottom: 85px
+            &-item
+                width: 250px
+                padding-top: 56px
+                &:nth-child(1)
+                    background-size: 50px 45px
+                &:nth-child(2)
+                    background-size: 50px 45px
+                &:nth-child(3)
+                    background-size: 50px 45px
+                &:nth-child(4)
+                    background-size: 50px 45px
+            &-descr
+                margin-top: 16px
+        &__portfolio
+            margin-bottom: -70px
+            &-img
+                width: 310px
+                height: 415px                           
+        &__video
+            min-height: 435px
+            &-player
+                height: 300px
+                margin-top: 35px
+        &__price
+            padding-bottom: 15px
+            &-items
+                margin-top: 15px
+            &-item
+                min-height: 380px
+                width: 310px
+                padding-top: 15px
+            &-sum
+                font-size: 24px
+                margin-top: 22px
+            &-descr
+                line-height: 31px
+                margin-top: 16px
+                font-size: 16px
+        &__contacts
+            background-size: 900px
+            min-height: 439px
+            &-title
+                padding-top: 25px
+                font-size: 30px
+                margin-bottom: 10px
+            &-form
+                min-height: 330px
+    .footer
+        &__social
+            padding-top: 20px                                
+
+@media (max-width: 350px)
+    .section
+        &__hero
+            &-descr
+                width: 280px
+
+@media (max-width: 320px)
+    .light_btn 
+        margin-left: -7px
+        margin-right: 20px
+    .section
+        &__hero
+            &-descr
+                width: 230px
+        &__portfolio
+            &-img
+                width: 280px
+                height: 365px
+        &__video
+            min-height: 360px
+            &-player
+                height: 240px
+        &__price
+            &-item
+                min-height: 370px
+                margin-top: 10px
+            &-descr
+                line-height: 29px                       
+    .footer
+        &__descr
+            padding-top: 0
+        &__rs
+            padding-top: 10px
+        &__social
+            padding-top: 15px        
+
+@media (max-width: 300px)
+    .light_btn 
+        margin-left: -14px
+        margin-right: 12px
+    .section
+        &__header
+            background-image: none
+        &__hero
+            &-descr
+                width: 212px 
+    .light-theme 
+        .header-bg
+            background-image: none                                  
